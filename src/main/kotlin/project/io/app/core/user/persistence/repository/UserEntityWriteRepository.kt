@@ -7,6 +7,10 @@ import project.io.app.core.user.domain.User
 import project.io.app.core.user.persistence.UserWriteRepository
 import project.io.app.logger
 
+/**
+ * 테스트를 위한 클래스.
+ * 실제 개발 환경이라면 @Transactional 제거할 것.
+ * */
 @Repository
 class UserEntityWriteRepository(
     private val entityManager: EntityManager,
@@ -14,10 +18,6 @@ class UserEntityWriteRepository(
 
     private val log = logger()
 
-    /**
-     * 테스트를 위한 메서드.
-     * 실제 환경이라면 @Transactional 제거할 것.
-     * */
     @Transactional
     override fun saveAll(users: List<User>) {
         users.forEach { user ->
@@ -25,5 +25,10 @@ class UserEntityWriteRepository(
         }
         entityManager.flush()
         log.info("FINISHED")
+    }
+
+    @Transactional
+    override fun clear() {
+        entityManager.createQuery("DELETE FROM users").executeUpdate();
     }
 }
