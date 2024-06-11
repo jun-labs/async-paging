@@ -5,15 +5,10 @@ import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.data.domain.PageRequest
-import org.springframework.test.context.ActiveProfiles
 import project.io.app.core.user.application.UserReadService
 import project.io.app.core.user.domain.User
-import project.io.app.core.user.persistence.UserWriteRepository
 
 class UserSearchIntegrationTest : IntegrationTestBase() {
-
-    @Autowired
-    private lateinit var userWriteRepository: UserWriteRepository
 
     @Autowired
     private lateinit var userReadService: UserReadService

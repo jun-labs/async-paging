@@ -6,12 +6,8 @@ import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import project.io.app.core.user.domain.User
 import project.io.app.core.user.persistence.UserReadRepository
-import project.io.app.core.user.persistence.UserWriteRepository
 
 class UserSaveIntegrationTest : IntegrationTestBase() {
-
-    @Autowired
-    private lateinit var userWriteRepository: UserWriteRepository
 
     @Autowired
     private lateinit var userReadRepository: UserReadRepository
