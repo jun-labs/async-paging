@@ -1,0 +1,27 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema/schema.sql
+  datasource:
+    url: jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;DATABASE_TO_LOWER=TRUE;
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      database-platform: org.hibernate.dialect.H2Dialect
+      hibernate:
+        generate_statistics: false
+        dialect: org.hibernate.dialect.H2Dialect
+        default_batch_fetch_size: 1000
+        show_sql: false
+        format_sql: false
+    open-in-view: false
+    show-sql: false
+    defer-datasource-initialization: true
