@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import project.io.app.core.user.domain.User
-import project.io.app.core.user.persistence.UserReadRepository
+import project.io.app.core.user.domain.UserReadRepository
 
 class UserSaveIntegrationTest : IntegrationTestBase() {
 

@@ -5,7 +5,7 @@ import org.springframework.boot.ApplicationRunner
 import org.springframework.stereotype.Component
 import org.springframework.transaction.annotation.Transactional
 import project.io.app.core.user.domain.User
-import project.io.app.core.user.persistence.UserWriteRepository
+import project.io.app.core.user.domain.UserWriteRepository
 import project.io.app.logger
 
 @Component

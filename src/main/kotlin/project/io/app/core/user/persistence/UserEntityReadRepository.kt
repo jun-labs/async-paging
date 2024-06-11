@@ -1,4 +1,4 @@
-package project.io.app.core.user.persistence.repository
+package project.io.app.core.user.persistence
 
 import com.querydsl.core.types.dsl.Expressions.numberTemplate
 import com.querydsl.jpa.impl.JPAQueryFactory
@@ -7,7 +7,7 @@ import kotlinx.coroutines.coroutineScope
 import org.springframework.stereotype.Repository
 import project.io.app.core.user.domain.QUser.user
 import project.io.app.core.user.domain.User
-import project.io.app.core.user.persistence.UserReadRepository
+import project.io.app.core.user.domain.UserReadRepository
 
 @Repository
 class UserEntityReadRepository(

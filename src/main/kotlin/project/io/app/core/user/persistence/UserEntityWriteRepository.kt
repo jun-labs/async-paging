@@ -1,10 +1,10 @@
-package project.io.app.core.user.persistence.repository
+package project.io.app.core.user.persistence
 
 import jakarta.persistence.EntityManager
 import org.springframework.stereotype.Repository
 import org.springframework.transaction.annotation.Transactional
 import project.io.app.core.user.domain.User
-import project.io.app.core.user.persistence.UserWriteRepository
+import project.io.app.core.user.domain.UserWriteRepository
 import project.io.app.logger
 
 /**

@@ -6,7 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.test.mock.mockito.MockBean
 import org.springframework.test.context.ActiveProfiles
 import project.io.app.common.configuration.data.DataInitializer
-import project.io.app.core.user.persistence.UserWriteRepository
+import project.io.app.core.user.domain.UserWriteRepository
 
 @SpringBootTest
 @ActiveProfiles("test")

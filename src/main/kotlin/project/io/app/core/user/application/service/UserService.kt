@@ -4,7 +4,7 @@ import org.springframework.data.domain.Pageable
 import org.springframework.stereotype.Service
 import project.io.app.core.user.application.UserReadService
 import project.io.app.core.user.domain.User
-import project.io.app.core.user.persistence.UserReadRepository
+import project.io.app.core.user.domain.UserReadRepository
 import project.io.app.logger
 import java.lang.System.currentTimeMillis
 

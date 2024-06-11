@@ -1,4 +1,4 @@
-package project.io.app.core.user.persistence
+package project.io.app.core.user.domain
 
 import project.io.app.core.user.domain.User
 
